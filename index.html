@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: "Helvetica Neue", Arial, sans-serif;
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
       line-height: 1.5;
       color: #222;
@@ -16,109 +16,117 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
     header img {
       width: 160px;
       height: 160px;
-      border-radius: 50%; /* Perfect circle */
+      border-radius: 50%;
       object-fit: cover;
     }
-    h1 {
-      font-size: 28px;
-      margin: 0;
+    h1 { margin: 0; font-size: 28px; }
+    .info { font-size: 15px; }
+    nav {
+      margin-top: 10px;
+      padding: 10px 0;
+      border-bottom: 2px solid #ccc;
     }
-    .info {
-      font-size: 15px;
+    nav a {
+      margin-right: 16px;
+      text-decoration: none;
+      color: #0645ad;
+      font-weight: 500;
     }
-    section {
-      margin-top: 28px;
-    }
+    nav a:hover { text-decoration: underline; }
+    section { margin-top: 28px; }
     h2 {
       font-size: 20px;
       border-bottom: 2px solid #ccc;
       padding-bottom: 3px;
     }
-    ul {
-      margin: 6px 0;
-      padding-left: 20px;
-    }
     footer {
       margin-top: 40px;
       font-size: 13px;
       color: #666;
-    }
-    a {
-      color: #0645ad;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Grants & Awards</a>
+    <a href="#services">Services</a>
+    <a href="index_cn.html">中文主页</a>
+  </nav>
+
+  <header id="home">
     <img src="shenjiwei.jpg" alt="Jiwei Shen">
     <div>
       <h1>Jiwei Shen</h1>
       <div class="info">
-        Ph.D / Associate Professor<br>
-        <a href="https://cee.ecnu.edu.cn/main.htm" target="_blank">School of Communication and Electronic Engineering, ECNU</a><br>
+        Ph.D. / Associate Professor<br>
+        <a href="https://cee.ecnu.edu.cn/main.htm" target="_blank">School of Communication and Electronic Engineering, East China Normal University</a><br>
         Email: jwshen[AT]cee.ecnu.edu.cn<br>
-        <a href="https://www.linkedin.com/in/sheno/" target="_blank">LinkedIn</a> | 
-        <a href="index_cn.html">中文主页</a>
+        <a href="https://www.linkedin.com/in/sheno/" target="_blank">LinkedIn</a>
       </div>
     </div>
   </header>
 
   <section>
-    Jiwei Shen has served as the Principal Investigator of one National Natural Science Foundation of China project, one Shanghai Natural Science Foundation project, and one China Postdoctoral Science Foundation project. He was selected for the National Postdoctoral Program for Innovative Talents and the Shanghai “Super Postdoctoral” Incentive Program. His doctoral dissertation received the Excellent Ph.D. Dissertation Award from the Shanghai Society of Image and Graphics, East China Normal University, and the Shanghai Municipality. He was also recognized as an Excellent Graduate Ph.D. in Shanghai and as an Outstanding Supervisor in the National College Student Innovation and Invention Competition.
+    Jiwei Shen has served as the Principal Investigator of one National Natural Science Foundation of China project, one Shanghai Natural Science Foundation project, and one China Postdoctoral Science Foundation project. 
+    He was selected for the National Postdoctoral Program for Innovative Talents and the Shanghai “Super Postdoctoral” Incentive Program. 
+    His doctoral dissertation received the Excellent Ph.D. Dissertation Award from the Shanghai Society of Image and Graphics, East China Normal University, and the Shanghai Municipality. 
+    He was also recognized as an Excellent Graduate Ph.D. in Shanghai and as an Outstanding Supervisor in the National College Student Innovation and Invention Competition.
   </section>
 
-  <section>
+  <section id="news">
     <h2>News</h2>
     <ul>
-      <li>September 2025: Attended the evaluation meeting on rapid assessment of trainees’ capabilities and capability index system in Beijing, with experts from Beihang University and the China Aeronautical Research Institute.</li>
-      <li>August 2025: Participated in the 60th Anniversary Celebration of the Tibet Autonomous Region and engaged in the “Smart Lazi” project in Lazi County, Shigatse, as a postdoctoral technical expert representing Shanghai.</li>
-      <li>August 2025: My project was selected as one of the first supported projects by the ECNU Intelligent Software and AI+ Proof-of-Concept Center.</li>
-      <li>July 2025: Attended the 19th Annual Conference of Deans of Schools of Electronic Information in Chengdu and received an honor under the Paper Incentive Program.</li>
+      <li>Sep. 2025: Participated in the evaluation meeting of the project on rapid assessment of pilot trainees’ capabilities and indicator systems in Beijing, with experts from Beihang University and the China Aeronautical Research Institute.</li>
+      <li>Aug. 2025: Attended the 60th Anniversary Celebration of the Tibet Autonomous Region and connected with the “Smart Lazi” project in Lazi County, Shigatse as a postdoctoral technical expert from Shanghai.</li>
+      <li>Aug. 2025: My project was selected as one of the first supported projects by the ECNU Intelligent Software and AI+ Proof-of-Concept Center.</li>
+      <li>Jul. 2025: Attended the 19th Annual Conference of Deans of Electronic Information Schools in Chengdu, receiving the Paper Incentive Program Award.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="publications">
     <h2>Selected Publications</h2>
     <ul>
       <li>Jiwei Shen, Liang Yuan, Yue Lu, Shujing Lyu. Leveraging Predictions of Task-related Latents for Interactive Visual Navigation. <i>IEEE Transactions on Neural Networks and Learning Systems</i>, 2025.</li>
       <li>Jiwei Shen, Shujing Lyu, Yue Lu. Leveraging Visual Memory Encoding and Defect-Aware Optimization for Precise Determination of the Lithography Process Windows. <i>IEEE Transactions on Circuits and Systems for Video Technology</i>, 2024.</li>
       <li>Jiwei Shen, Hu Lu, Shujing Lyu, Yue Lu. Enhancing Parcel Singulation Efficiency through Transformer-based Position Attention and State Space Augmentation. <i>Expert Systems with Applications</i>, 2024.</li>
       <li>Jiwei Shen, Pengjie Lou, Liang Yuan, Shujing Lyu, Yue Lu. VME-Transformer: Enhancing Visual Memory Encoding for Navigation in Interactive Environments. <i>IEEE Robotics and Automation Letters</i>, 2024.</li>
-      <li>Jiwei Shen, Hu Lu, Hao Zhang, Shujing Lyu, Yue Lu. Enhancing Reinforcement Learning via Causally Correct Input Identification and Targeted Intervention. <i>IEEE International Conference on Acoustics, Speech and Signal Processing</i>, 2024.</li>
+      <li>Jiwei Shen, Hu Lu, Hao Zhang, Shujing Lyu, Yue Lu. Enhancing Reinforcement Learning via Causally Correct Input Identification and Targeted Intervention. <i>ICASSP</i>, 2024.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="awards">
     <h2>Selected Grants and Awards</h2>
     <ul>
-      <li>Principal Investigator of National Natural Science Foundation of China project</li>
-      <li>Principal Investigator of Shanghai Natural Science Foundation project</li>
-      <li>Principal Investigator of China Postdoctoral Science Foundation project</li>
-      <li>Selected for the National Postdoctoral Program for Innovative Talents</li>
-      <li>Selected for the Shanghai “Super Postdoctoral” Incentive Program</li>
-      <li>Excellent Ph.D. Dissertation Award, Shanghai Society of Image and Graphics</li>
-      <li>Excellent Ph.D. Dissertation Award, East China Normal University</li>
-      <li>Excellent Graduate Ph.D., Shanghai</li>
-      <li>Outstanding Supervisor, National College Student Innovation and Invention Competition</li>
+      <li>Principal Investigator: National Natural Science Foundation of China project.</li>
+      <li>Principal Investigator: Shanghai Natural Science Foundation project.</li>
+      <li>Principal Investigator: China Postdoctoral Science Foundation project.</li>
+      <li>National Postdoctoral Program for Innovative Talents.</li>
+      <li>Shanghai “Super Postdoctoral” Incentive Program.</li>
+      <li>Excellent Ph.D. Dissertation Award, Shanghai Society of Image and Graphics.</li>
+      <li>Excellent Ph.D. Dissertation Award, ECNU.</li>
+      <li>Excellent Ph.D. Dissertation Award, Shanghai Municipality.</li>
+      <li>Excellent Graduate Ph.D., Shanghai.</li>
+      <li>Outstanding Supervisor, National College Student Innovation and Invention Competition.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="services">
     <h2>Services</h2>
-    <p>Reviewer for TPAMI, TIP, PR, TNNLS, TCSVT, RAL, TMM and other leading international journals.</p>
+    <p>Reviewer for TPAMI, TIP, PR, TNNLS, TCSVT, RAL, TMM and other top international journals.</p>
   </section>
 
   <footer>
-    Last updated: 2025/09/17, by Jiwei Shen
+    Last updated: 2025/09/17, Jiwei Shen
   </footer>
 </body>
 </html>
